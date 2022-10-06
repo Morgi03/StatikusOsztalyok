@@ -86,5 +86,11 @@ public final class Veletlen {
         return datum;
     }
 
-
+    private static int sorszam = 0;
+    public static String velEmail(String nev){
+        nev = nev.replaceAll("[^\\p{ASCII}]", "");
+        String[] temp = nev.toLowerCase().split(" ");
+        sorszam++;
+        return temp[0]+temp[1]+sorszam+"@gmail.com";
+    }
 }
