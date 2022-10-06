@@ -93,4 +93,22 @@ public final class Veletlen {
         sorszam++;
         return temp[0]+temp[1]+sorszam+"@gmail.com";
     }
+    public static String velMobil(){
+        return String.format("+36 (%d) %d-%d-%d",mobilSzolgaltatoRandom(),velEgesz(100,999),velEgesz(10,99),velEgesz(10,99));
+    }
+    private static int mobilSzolgaltatoRandom(){
+        int num = velEgesz(1,4);
+        switch (num){
+            case 1:
+                return 20;
+            case 2:
+                return 30;
+            case 3:
+                return 50;
+            case 4:
+                return 70;
+            default:
+                return 20;
+        }
+    }
 }

@@ -34,6 +34,10 @@ public class Main {
         for (int i = 0; i < 15; i++) {
             System.out.println(Veletlen.velEmail(Veletlen.velTeljesNev(true)));
         }
+        System.out.println();
+        for (int i = 0; i < 15; i++) {
+            System.out.println(Veletlen.velMobil());
+        }
     }
 
 }
