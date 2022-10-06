@@ -14,6 +14,8 @@ public final class Veletlen {
     private static final List<String> vezNevek = feltolt("files/veznev.txt");
     private static final List<String> ferfiKerNevek = feltolt("files/ferfikernev.txt");
     private static final List<String> noiiKerNevek = feltolt("files/noikernev.txt");
+    private static final List<String> sportag = feltolt("files/sportag.txt");
+    private static final List<String> egyesulet = feltolt("files/egyesulet.txt");
 
 
     private static List<String> feltolt(String faljnev) {
@@ -110,5 +112,12 @@ public final class Veletlen {
             default:
                 return 20;
         }
+    }
+    public static String velSportag() {
+        return sportag.get(rnd.nextInt(sportag.size()));
+    }
+
+    public static String velSportegyesulet() {
+        return egyesulet.get(rnd.nextInt(egyesulet.size()));
     }
 }
